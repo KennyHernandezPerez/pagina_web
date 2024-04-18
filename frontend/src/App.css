@@ -1,0 +1,259 @@
+#root {
+  padding: 1rem;
+  text-align: center;
+  background-color: #22211F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+li{
+  color: white
+}
+
+.banner-destacado {
+  display: flex; /* Muestra las imágenes en línea */
+  justify-content: space-between; /* Espacio igual entre las imágenes */
+  align-items: center; /* Centra verticalmente las imágenes */
+  margin-bottom: 20px; /* Espacio inferior para separar el banner del contenido */
+}
+
+/* Navbar css*/
+.topnav {
+  background-color: #F7B829;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: rgb(41, 37, 37);
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #C9A045;
+  color: black;
+}
+
+.search-bar {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-bar-expanded {
+  width: 30vh;
+  min-width: 200px;
+
+}
+
+/* Cards css */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s; /* Duración de la transición al pasar el mouse */
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container:hover .card-image {
+  filter: brightness(30%);
+  /* Oscurece la imagen al pasar el mouse */
+}
+
+.card-container:hover .card-title {
+  transform: translateY(0); /* Muestra el título al pasar el mouse */
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semitransparente */
+  color: white;
+  padding: 8px;
+  text-align: center;
+  transform: translateY(100%);
+  /* Inicialmente, oculta el título */
+  transition: transform 0.3s;
+  /* Transición para mostrar el título */
+}
+
+/* Footer.css */
+.footer {
+  background-color: #22211F;
+  color: white;
+  padding: 35px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.left-content::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -15px;
+  left: 25%;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.right-content::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -15px;
+  left: 25%;
+}
+
+.list a {
+  color: white;
+}
+
+/* Descripcion */
+.description-title{
+  color:rgb(242, 250, 10);
+}
+.descripcion-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #F5F5F5;
+}
+
+.left-aside {
+  flex: 1;
+}
+
+.middle-article {
+  flex: 3; /* Adjust the flex value to control the width of the middle article */
+}
+
+.right-aside {
+  flex: 1;
+}
+
+.game-image{
+  width: 50vh;
+  height: 30vh;
+}
+
+.movie-image{
+  width: 40vh;
+  height: 50vh;
+
+  min-width: 150px;
+  min-height: 250px;
+}
+
+.manga-image{
+  width: 40vh;
+  height: 55vh;
+
+  min-width: 150px;
+  min-height: 250px;
+}
+
+
+/* Perfil */
+
+.emp-profile{
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+}
+.profile-img{
+  text-align: center;
+}
+.profile-img img{
+  width: 70%;
+  height: 100%;
+}
+
+.profile-head h5{
+  color: #333;
+}
+.profile-head h6{
+  color: #0062cc;
+}
+
+.profile-head .nav-tabs{
+  margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+  font-weight:600;
+  border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+  border: none;
+  border-bottom:2px solid #0062cc;
+}
+.profile-work{
+  padding: 14%;
+  margin-top: -15%;
+}
+.profile-work p{
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.profile-work a{
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+.profile-work ul{
+  list-style: none;
+}
+.profile-tab label{
+  font-weight: 600;
+}
+.profile-tab p{
+  font-weight: 600;
+  color: #0062cc;
+}
