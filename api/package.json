@@ -1,6 +1,7 @@
 {
   "name": "proyecto",
   "version": "0.0.1",
+  "main": "./frontend/App.jsx",
   "description": "",
   "author": "",
   "private": true,
