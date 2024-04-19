@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import App from './App.js'; // Cambiado a .js
-
-import './index.css'; // Importa directamente el archivo CSS
+import App from './App.jsx'; 
+import './index.css';
 
 const root = document.getElementById('root');
 
