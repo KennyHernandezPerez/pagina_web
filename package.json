@@ -1,7 +1,7 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "main": "frontend/src/main.jsx",
+  "main": "frontend/src/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
