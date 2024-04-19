@@ -1,7 +1,4 @@
 {
-  "name": "proyecto",
-  "version": "1.0.0",
-  "main": "./frontend/src/main.jxs",
   "dependencies": {
     "@react-oauth/google": "^0.11.1",
     "axios": "^1.6.0",
