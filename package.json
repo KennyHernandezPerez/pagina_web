@@ -2,7 +2,7 @@
   "name": "proyecto",
   "version": "1.0.0",
   "type": "commonjs",
-  "main": "frontend/src/main.js",
+  "main": "frontend/src/main.mjs",
   "scripts": {
     "start": "node frontend/src/main.js",
     "dev": "vite",
