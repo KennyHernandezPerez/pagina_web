@@ -4,7 +4,7 @@
   "type": "commonjs",
   "main": "frontend/src/main.mjs",
   "scripts": {
-    "start": "node frontend/src/main.js",
+    "start": "node frontend/src/main.mjs",
     "dev": "vite",
     "build": "vite build"
   },
