@@ -1,3 +1,5 @@
+import React from 'react';
+
 const React = require('react');
 const ReactDOM = require('react-dom');
 const { GoogleOAuthProvider } = require('@react-oauth/google');
