@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "main": "./frontend/src/app.js",
+  "main": "./frontend/src/main.jxs",
   "type": "module",
   "scripts": {
     "dev": "vite",
