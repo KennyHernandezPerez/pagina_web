@@ -1,13 +1,12 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const { GoogleOAuthProvider } = require('@react-oauth/google');
-const App = require('./App.js');
-require('./index.css');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import App from './App.js'; // No es necesario usar .default
+
+import './index.css'; // Importa directamente el archivo CSS
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  React.createElement(
-    GoogleOAuthProvider,
-    { clientId: "20339060285-jbne00ieud7j9gv5t1u2bl3msucb82cr.apps.googleusercontent.com" },
-    React.createElement(App.default) // Nota el uso de .default para acceder al componente exportado por defecto
-  )
+  <GoogleOAuthProvider clientId="20339060285-jbne00ieud7j9gv5t1u2bl3msucb82cr.apps.googleusercontent.com">
+    <App />
+  </GoogleOAuthProvider>
 );
